@@ -1,0 +1,12 @@
+body {
+  text-align: center;
+  justify-content: center;
+}
+form {
+  display: inline-block;
+  margin:  auto;
+}
+.form_div {
+  background-color: rgb(80, 66, 82);
+  opacity:0.8;
+}

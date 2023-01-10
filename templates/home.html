@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content%}
+
+
+<div class="d-lg-flex p-5">
+  <form action="/predict" method="POST">
+      <div class="form-control form_div" style="width: 20rem;">
+       
+        <input type="number" class="form-control" name="annual" value="" placeholder="Annual Rainfall(mm)" required>
+
+      <br>
+      
+      <input type="number" class="form-control" name="jf" value="" placeholder="JAN-FEB Rainfall(mm)" required>
+
+    <br>
+
+        <input type="number" class="form-control" name="mam" value="" placeholder="MAR-MAY Rainfall(mm)" required>
+      <br>
+          <input type="number" class="form-control" name="jjas" value="" placeholder="JUN-SEP Rainfall(mm)" required>
+    
+        <br>
+        <input type="number" class="form-control" name="ond" value="" placeholder="OCT-DEC Rainfall(mm)" required>
+
+      <br>
+      <button type="submit" class="btn btn-primary" style="width: 7rem;">Predict</button>
+      </div>
+    </form>
+
+</div>
+{% endblock %}
